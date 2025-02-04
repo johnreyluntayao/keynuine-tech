@@ -1,7 +1,10 @@
 
 import { 
   Header,
-  Hero
+  Hero,
+  Contact,
+  Service,
+  Approach,
 
  } from '@/lib/imports';
 
@@ -9,8 +12,10 @@ export default function Home() {
   return (
    <main>
     <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin'>
-      <Header/>   
-      <Hero />
+      <Header/>
+      <Service/>
+      <Approach/>   
+      <Contact/>
     </div>
     
    </main>
