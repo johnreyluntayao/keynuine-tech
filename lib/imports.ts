@@ -1,5 +1,6 @@
 //Components
 export { default as Header } from '@/components/Header';
+export { default as Hero } from '@/components/Hero';
 
 //UI Components
 export { default as Button } from '@/components/ui/Button'
