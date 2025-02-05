@@ -25,4 +25,5 @@ export {
 //Properties
 export type {
     ButtonProps,
+    cardProps
 } from '@/lib/types'
