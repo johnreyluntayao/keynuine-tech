@@ -10,6 +10,7 @@ const Hero = () => {
           <h2 className="text-xs md:text-sm font-semibold tracking-[0.2rem] md:tracking-[0.3rem] lg:tracking-[0.9rem] text-blue-950/50 pb-2">
             KEYNUINE TECHNOLOGIES
           </h2>
+          
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-blue-950 pb-4">
             Pushing Through
             <span className="text-blue-500"> Bound</span>aries
