@@ -5,8 +5,8 @@ import {
   Contact,
   Service,
   Approach,
-  TechStack
-
+  Footer,
+  BottomFooter
  } from '@/lib/imports';
 
 export default function Home() {
@@ -18,6 +18,8 @@ export default function Home() {
       <Service/>
       <Approach/> 
       <Contact/>
+      <Footer />
+      <BottomFooter/>
     </div>
     
    </main>

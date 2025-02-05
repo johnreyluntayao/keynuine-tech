@@ -106,3 +106,25 @@ export const techStack = [
     },
     
 ]
+
+  // Data for quick links
+  export const quickLinks = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#offer", label: "What we offer" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  // Data for contact info
+  export const contactInfo = [
+    { type: "Email", value: "keynuinetech@gmail.com" },
+    { type: "Phone", value: "+639471852092" },
+    { type: "Address", value: "Daet, Camarines Norte" },
+  ];
+
+  // Data for social media
+  export const socialMedia = [
+    { href: "#facebook", label: "Facebook" },
+    { href: "#twitter", label: "Twitter" },
+    { href: "#linkedin", label: "LinkedIn" },
+  ];
