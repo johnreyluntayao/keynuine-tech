@@ -5,6 +5,7 @@ import {
   Contact,
   Service,
   Approach,
+  TechStack
 
  } from '@/lib/imports';
 
@@ -15,7 +16,7 @@ export default function Home() {
       <Header/>
       <Hero />
       <Service/>
-      <Approach/>   
+      <Approach/> 
       <Contact/>
     </div>
     

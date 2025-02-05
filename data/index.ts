@@ -65,3 +65,44 @@ export const ApproachCardContent = [
     }
     
 ]
+
+export const techStack = [
+    {
+        id: 1,
+        label: "Next JS",
+        img: "/techstack/nextjs.svg"
+    },{
+        id: 2,
+        label: "Typescript",
+        img: "/techstack/typescript.svg"
+    },{
+        id: 3,
+        label: "React JS/Native",
+        img: "/techstack/react.svg"
+    },{
+        id: 4,
+        label: "Tailwind CSS",
+        img: "/techstack/tailwindcss.svg"
+    },{
+        id: 5,
+        label: "HTML",
+        img: "/techstack/html.svg"
+    },{
+        id: 6,
+        label: "CSS",
+        img: "/techstack/css.svg"
+    },{
+        id: 7,
+        label: "JavaScript",
+        img: "/techstack/javascript.svg"
+    },{
+        id: 8,
+        label: "C++",
+        img: "/techstack/cplusplus.svg"
+    },{
+        id: 9,
+        label: "Unity",
+        img: "/techstack/unity.svg"
+    },
+    
+]
