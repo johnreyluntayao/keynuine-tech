@@ -4,3 +4,12 @@ export type ButtonProps = {
   link: string;
   className?: string;
 };
+
+//Our Approach Cards
+export type cardProps = {
+    id: number;
+    count: string;
+    title: string;
+    icon: string;
+    description: string;
+};
