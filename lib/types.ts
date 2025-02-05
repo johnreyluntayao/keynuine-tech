@@ -5,11 +5,19 @@ export type ButtonProps = {
   className?: string;
 };
 
-//Our Approach Cards
+//Our Approach Card Props
 export type cardProps = {
     id: number;
     count: string;
     title: string;
     icon: string;
     description: string;
+};
+
+//services Props
+export type serviceCardProps = {
+  id: number,
+  title: string; 
+  icon: string;
+  description?: string;
 };

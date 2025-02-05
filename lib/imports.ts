@@ -11,6 +11,7 @@ export { default as Footer } from '@/components/Footer';
 export { default as Button } from '@/components/ui/Button'
 export { default as ApproachCard}  from "@/components/ui/ApproachCard";
 export { default as BottomFooter } from '@/components/ui/BottomFooter';
+export { default as ServiceCard } from "@/components/ui/ServiceCard";
 
 //Data
 export {
@@ -20,10 +21,12 @@ export {
     quickLinks,
     contactInfo,
     socialMedia,
+    ServiceCardContent,
 } from '@/data'
 
 //Properties
 export type {
     ButtonProps,
-    cardProps
+    cardProps,
+    serviceCardProps,
 } from '@/lib/types'
