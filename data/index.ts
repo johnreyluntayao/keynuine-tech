@@ -128,3 +128,40 @@ export const techStack = [
     { href: "#twitter", label: "Twitter" },
     { href: "#linkedin", label: "LinkedIn" },
   ];
+
+
+  export const carouselItems = [
+  {
+    index: 0,
+    title: "TravelCN",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+    image: "/Travel CN.svg",
+    visitLink: "#",
+    codeLink: "#",
+  },
+  {
+    index: 1,
+    title: "Ambo",
+    description: "Ma boi ambo",
+    image: "/ambo.jpg",
+    visitLink: "#",
+    codeLink: "#",
+  },
+  {
+    index: 2,
+    title: "Dark Johnrey",
+    description: "Black",
+    image: "/Johnrey.jpg",
+    visitLink: "#",
+    codeLink: "#",
+  },
+  {
+    index: 3,
+    title: "Patot",
+    description: "May TB",
+    image: "/Patot.jpg",
+    visitLink: "#",
+    codeLink: "#",
+  },
+
+];
