@@ -5,6 +5,7 @@ import {
   Contact,
   Service,
   Approach,
+  Projects,
   Footer,
   BottomFooter
  } from '@/lib/imports';
@@ -18,6 +19,7 @@ export default function Home() {
       <Service/>
       <Approach/> 
       <Contact/>
+      <Projects/>
       <Footer />
       <BottomFooter/>
     </div>
