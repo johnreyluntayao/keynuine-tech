@@ -150,7 +150,7 @@ export const techStack = [
   {
     index: 2,
     title: "Dark Johnrey",
-    description: "Black n*gga",
+    description: "Black",
     image: "/Johnrey.jpg",
     visitLink: "#",
     codeLink: "#",

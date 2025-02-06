@@ -33,9 +33,10 @@ const Carousel = () => {
             />
         </button>
         
-        <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full h-80">
-          <div className="w-full">
-          <img src={carouselItems[currentIndex].image} alt={carouselItems[currentIndex].title} className="w-full h-full object-contain" />
+        <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full h-auto md:h-96">
+          <div className="w-full relative h-48 md:h-full flex items-center justify-center">
+            <span className="absolute top-2 left-2 bg-gray-800 text-white text-xs px-2 py-1 rounded">{currentIndex + 1}</span>
+            <img src={carouselItems[currentIndex].image} alt={carouselItems[currentIndex].title} className="w-full h-auto max-h-48 md:max-h-full object-contain" />
           </div>
           <div className="p-4 flex flex-col justify-center w-full">
             <h2 className="text-lg font-bold">{carouselItems[currentIndex].title}</h2>
