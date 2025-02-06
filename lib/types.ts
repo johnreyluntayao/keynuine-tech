@@ -21,3 +21,10 @@ export type serviceCardProps = {
   icon: string;
   description?: string;
 };
+
+//Navigation Button Props
+export type NavButtonProps = {
+  onClick: () => void;
+  icon: React.ReactNode;
+  className?: string;
+};
