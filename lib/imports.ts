@@ -4,6 +4,7 @@ export { default as Hero } from '@/components/Hero';
 export { default as Service } from '@/components/Service';
 export { default as Approach } from '@/components/Approach';
 export { default as Contact } from '@/components/Contact';
+export { default as Projects } from '@/components/Projects';
 export { default as TechStack } from '@/components/TechStack';
 export { default as Footer } from '@/components/Footer';
 
