@@ -130,7 +130,7 @@ export const techStack = [
   ];
 
 
-  export const carouselItems = [
+  export const ProjectItems = [
   {
     index: 0,
     title: "TravelCN",
@@ -138,30 +138,42 @@ export const techStack = [
     image: "/Travel CN.svg",
     visitLink: "#",
     codeLink: "#",
-  },
-  {
-    index: 1,
-    title: "Ambo",
-    description: "Ma boi ambo",
-    image: "/ambo.jpg",
-    visitLink: "#",
-    codeLink: "#",
-  },
-  {
-    index: 2,
-    title: "Dark Johnrey",
-    description: "Black",
-    image: "/Johnrey.jpg",
-    visitLink: "#",
-    codeLink: "#",
-  },
-  {
-    index: 3,
-    title: "Patot",
-    description: "May TB",
-    image: "/Patot.jpg",
-    visitLink: "#",
-    codeLink: "#",
-  },
+  }
 
+  
+
+];
+
+export const AboutContent = [
+    {
+      index: 0,
+      title: "About Us",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+      image: "/Travel CN.svg",
+
+    },
+
+    {
+        index: 1,
+        title: "Johnrey Luntayao",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+        image: "/Johnrey,jpg",
+  
+    },
+
+    {
+        index: 2,
+        title: "Aljonard Dela Cruz",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+        image: "/ambo.jpg",
+  
+    },
+
+    {
+        index: 3,
+        title: "John Cloyd Refani",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+        image: "/Travel CN.svg",
+  
+    },
 ];
