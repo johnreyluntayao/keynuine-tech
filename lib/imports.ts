@@ -10,7 +10,7 @@ export { default as TechStack } from '@/components/TechStack';
 export { default as Footer } from '@/components/Footer';
 
 //UI Components
-export { default as Button } from '@/components/ui/Button'
+export { default as Button } from '@/components/ui/Button';
 export { default as ApproachCard}  from "@/components/ui/ApproachCard";
 export { default as BottomFooter } from '@/components/ui/BottomFooter';
 export { default as ServiceCard } from "@/components/ui/ServiceCard";
@@ -25,7 +25,7 @@ export {
     contactInfo,
     socialMedia,
     ServiceCardContent,
-} from '@/data'
+} from '@/data';
 
 //Properties
 export type {
@@ -33,5 +33,6 @@ export type {
     cardProps,
     serviceCardProps,
     NavButtonProps,
-    IndexNumber
-} from '@/lib/types'
+    IndexNumber,
+} from '@/lib/types';
+

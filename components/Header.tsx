@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { navItems } from "@/lib/imports";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -88,8 +89,14 @@ const Header: React.FC = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center bg-gray-400 p-3">
-          <p>LOGO</p>
+        <div className="flex justify-center items-center">
+          <Image
+          src="/KeyNuine.svg"
+          alt="KeyNuine Tech"
+          width={45}
+          height={45}
+          className="w-11 h-11 md:w-12 md:h-12 lg:w-14 lg:h-14"
+          />
         </div>
         <div className="pl-2">
           <p className="font-bold text-md md:text-lg lg:text-xl text-darkblue-400">KEYNUINE</p>
