@@ -20,8 +20,8 @@ export default function Home() {
       <Service/>
       <About/>
       <Approach/> 
-      <Contact/>
       <Projects/>
+      <Contact/>
       <Footer />
       <BottomFooter/>
     </div>

@@ -157,7 +157,7 @@ export const AboutContent = [
         index: 1,
         title: "Johnrey Luntayao",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/Travel CN.svg",
+        image: "/Johnrey,jpg",
   
     },
 
@@ -165,8 +165,7 @@ export const AboutContent = [
         index: 2,
         title: "Aljonard Dela Cruz",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/Travel CN.svg",
-  
+        image: "/ambo.jpg",
     },
 
     {

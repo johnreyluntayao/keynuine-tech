@@ -1,60 +1,69 @@
 "use client"
 
 import React, { useState } from "react";
-import { Button, NavButtonNext, NavButtonPrev } from "@/lib/imports";
-import { ProjectItems } from '@/data/index'
+import Image from "next/image";
+import { Button, NavButtonNext, NavButtonPrev, ProjectItems } from "@/lib/imports";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
-    setCurrentIndex((Index) => (Index === 0 ? ProjectItems.length - 1 : Index - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? ProjectItems.length - 1 : prevIndex - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((Index) => (Index === ProjectItems.length - 1 ? 0 : Index + 1));
-  };
+    setCurrentIndex((prevIndex) => (prevIndex === ProjectItems.length - 1 ? 0 : prevIndex + 1));
+
+  const currentItem = ProjectItems[currentIndex];
 
   return (
-    <div className="relative w-auto md:w-[700px] flex items-center justify-center">
-      <div className="flex gap-4 items-center justify-center">
-      
-        <NavButtonPrev 
-        onClick={prevSlide}
-        />
-          
+    <div className="relative w-auto flex items-center justify-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
 
-        
-        <div className=" grid grid-flow-row md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-full h-auto md:h-96">
-          <div className="w-full relative h-48 md:h-full flex items-center justify-center">
-            <span className="absolute top-2 left-2 bg-gray-800 text-white text-xs px-2 py-1 rounded">{currentIndex + 1}</span>
-            <img src={ProjectItems[currentIndex].image} alt={ProjectItems[currentIndex].title} className="w-full h-auto max-h-48 md:max-h-full object-cover" />
+        <div className="hidden md:block">
+          <NavButtonPrev onClick={prevSlide} />
+        </div>
+
+        <div className="grid grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-[450px] h-[300px] md:w-[500px] md:h-[350px] lg:w-[550px] lg:h-[400px]">
+          <div>
+            <Image
+              width={300}
+              height={300}
+              src={currentItem.image}
+              alt={currentItem.title}
+              className="bg-darkblue-600 w-full h-full object-cover"
+            />
           </div>
           <div className="p-4 flex flex-col justify-center w-full">
-            <h2 className="text-lg font-bold">{ProjectItems[currentIndex].title}</h2>
-            <p className="text-gray-600">{ProjectItems[currentIndex].description}</p>
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-blue-950 pb-4">
+              {currentItem.title}
+            </h2>
+            <p className="text-sm md:text-base text-blue-950 pb-6">
+              {currentItem.description}
+            </p>
             <div className="mt-4 flex gap-2">
               <Button
                 label="Visit!"
-                link={ProjectItems[currentIndex].visitLink}
-                className="text-white bg-blue-500 px-6 py-2 text-sm sm:text-base hover:bg-blue-600 transition-colors duration-300"
+                link={currentItem.visitLink}
+                className="text-white bg-blue-500"
               />
-
-              <Button 
+              <Button
                 label="Code!"
-                link={ProjectItems[currentIndex].codeLink}
-                className="text-blue-500 border-blue-500 border-1 px-6 py-2 text-sm sm:text-base hover:bg-blue-600 transition-colors duration-300"
+                link={currentItem.codeLink}
+                className="text-blue-500 border-blue-500 border-1 bg-white"
               />
-              
-              
             </div>
           </div>
         </div>
 
-        <NavButtonNext
-        onClick={nextSlide}
-        />
+        <div className="hidden md:block">
+          <NavButtonNext onClick={nextSlide} />
+        </div>
 
+        <div className="flex md:hidden gap-4 mt-4">
+          <NavButtonPrev onClick={prevSlide} />
+          <NavButtonNext onClick={nextSlide} />
+        </div>
       </div>
     </div>
   );
