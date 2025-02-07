@@ -5,6 +5,7 @@ export { default as Service } from '@/components/Service';
 export { default as Approach } from '@/components/Approach';
 export { default as Contact } from '@/components/Contact';
 export { default as Projects } from '@/components/Projects';
+export { default as About } from '@/components/About';
 export { default as TechStack } from '@/components/TechStack';
 export { default as Footer } from '@/components/Footer';
 
@@ -32,4 +33,5 @@ export type {
     cardProps,
     serviceCardProps,
     NavButtonProps,
+    IndexNumber
 } from '@/lib/types'

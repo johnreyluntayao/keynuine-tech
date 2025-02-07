@@ -28,3 +28,8 @@ export type NavButtonProps = {
   icon: React.ReactNode;
   className?: string;
 };
+
+
+export type IndexNumber = {
+  currentIndex: number;
+};
