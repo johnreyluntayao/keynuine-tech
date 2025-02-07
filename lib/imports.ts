@@ -33,4 +33,6 @@ export type {
     cardProps,
     serviceCardProps,
     NavButtonProps,
+    IndexNumber,
 } from '@/lib/types';
+
