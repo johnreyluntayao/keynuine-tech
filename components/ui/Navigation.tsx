@@ -17,7 +17,7 @@ export const NavButtonPrev = ({ onClick }: { onClick: () => void }) => {
     <NavButton
       onClick={onClick}
       icon={
-        <FaAngleLeft className="h-8 w-8 text-white group-hover/button:rotate-12 transition-transform duration-300" />
+        <FaAngleLeft className="h-8 w-8 m-2 text-white group-hover/button:rotate-12 transition-transform duration-300" />
       }
     />
   );
@@ -28,7 +28,7 @@ export const NavButtonNext = ({ onClick }: { onClick: () => void }) => {
     <NavButton
       onClick={onClick}
       icon={
-        <FaAngleRight className="h-8 w-8 text-white group-hover/button:-rotate-12 transition-transform duration-300" />
+        <FaAngleRight className="h-8 w-8 m-2 text-white group-hover/button:-rotate-12 transition-transform duration-300" />
       }
     />
   );
