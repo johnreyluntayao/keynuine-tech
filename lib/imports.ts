@@ -5,11 +5,12 @@ export { default as Service } from '@/components/Service';
 export { default as Approach } from '@/components/Approach';
 export { default as Contact } from '@/components/Contact';
 export { default as Projects } from '@/components/Projects';
+export { default as About } from '@/components/About';
 export { default as TechStack } from '@/components/TechStack';
 export { default as Footer } from '@/components/Footer';
 
 //UI Components
-export { default as Button } from '@/components/ui/Button'
+export { default as Button } from '@/components/ui/Button';
 export { default as ApproachCard}  from "@/components/ui/ApproachCard";
 export { default as BottomFooter } from '@/components/ui/BottomFooter';
 export { default as ServiceCard } from "@/components/ui/ServiceCard";
@@ -24,7 +25,7 @@ export {
     contactInfo,
     socialMedia,
     ServiceCardContent,
-} from '@/data'
+} from '@/data';
 
 //Properties
 export type {
@@ -32,4 +33,4 @@ export type {
     cardProps,
     serviceCardProps,
     NavButtonProps,
-} from '@/lib/types'
+} from '@/lib/types';
