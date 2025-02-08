@@ -7,6 +7,8 @@ import {
   Approach,
   Projects,
   About,
+  AboutUs,
+  AboutUsContent,
   Footer,
   BottomFooter
  } from '@/lib/imports';
@@ -18,7 +20,10 @@ export default function Home() {
       <Header/>
       <Hero />
       <Service/>
-      <About/>
+      <AboutUs 
+      about={AboutUsContent}
+      autoplay
+      />
       <Approach/> 
       <Projects/>
       <Contact/>

@@ -33,3 +33,12 @@ export type NavButtonProps = {
 export type IndexNumber = {
   currentIndex: number;
 };
+
+//AboutUs Props
+export type AboutProps = {
+  id:number;
+  img: string;
+  name: string;
+  designation: string;
+  description: string;
+};

@@ -6,6 +6,7 @@ export { default as Approach } from '@/components/Approach';
 export { default as Contact } from '@/components/Contact';
 export { default as Projects } from '@/components/Projects';
 export { default as About } from '@/components/About';
+export { AboutUs } from '@/components/AboutUs';
 export { default as TechStack } from '@/components/TechStack';
 export { default as Footer } from '@/components/Footer';
 
@@ -27,6 +28,7 @@ export {
     socialMedia,
     ServiceCardContent,
     ProjectItems,
+    AboutUsContent,
 } from '@/data';
 
 //Properties
@@ -36,4 +38,5 @@ export type {
     serviceCardProps,
     NavButtonProps,
     IndexNumber,
+    AboutProps,
 } from '@/lib/types';
