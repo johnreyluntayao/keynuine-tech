@@ -177,3 +177,31 @@ export const AboutContent = [
   
     },
 ];
+
+export const AboutUsContent = [
+    {
+        id: 1,
+        img: "/about/About.png",
+        name: "What we do",
+        designation: "",
+        description: "We are a passionate team dedicated to turning ideas into reality through web, mobile, and game development. Our mission is to empower businesses and individuals with cutting-edge technology and seamless user experiences.",
+    },{
+        id: 2,
+        img: "/about/Johnrey.PNG",
+        name: "Johnrey Luntayao",
+        designation: "UI/UX Designer | Front-end Developer",
+        description: "I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs. And is experienced in framework based front-end development.",
+    },{
+        id: 3,
+        img: "/Patot.jpg",
+        name: "John Cloyd",
+        designation: "Game Developer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+    },{
+        id: 4,
+        img: "/ambo.jpg",
+        name: "Aljonard Dela Cruz",
+        designation: "Front-end Developer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+    }
+]
