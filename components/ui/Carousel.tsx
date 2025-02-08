@@ -13,7 +13,6 @@ const Carousel = () => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === ProjectItems.length - 1 ? 0 : prevIndex + 1));
-  };
 
   const currentItem = ProjectItems[currentIndex];
 

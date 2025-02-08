@@ -166,7 +166,6 @@ export const AboutContent = [
         title: "Aljonard Dela Cruz",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
         image: "/ambo.jpg",
-  
     },
 
     {
