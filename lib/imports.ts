@@ -16,7 +16,7 @@ export { default as ApproachCard}  from "@/components/ui/ApproachCard";
 export { default as BottomFooter } from '@/components/ui/BottomFooter';
 export { default as ServiceCard } from "@/components/ui/ServiceCard";
 export { NavButtonPrev, NavButtonNext } from '@/components/ui/Navigation';
-export { default as Carousel } from '@/components/ui/Carousel';
+export { Carousel } from '@/components/ui/Carousel';
 
 //Data
 export {

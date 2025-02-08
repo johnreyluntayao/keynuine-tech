@@ -40,7 +40,7 @@ export const AboutUs = ({
 
   return (
     <section className="relative place-items-center antialiased py-8 md:py-16 bg-gradient-to-b from-white to-darkblue-100 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
-      <h1 className="pb-16 text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">Projects</h1>
+      <h1 className="pb-16 text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">About Us</h1>
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 pb-40 px-4 md:px-8 lg:px-12 max-w-sm md:max-w-4xl ">
         <div>
           <div className="relative h-80 w-full">
