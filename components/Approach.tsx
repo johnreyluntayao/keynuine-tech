@@ -1,5 +1,5 @@
 import React from "react";
-import { TechStack, ApproachCardContent,ApproachCard } from "@/lib/imports";
+import { TechStack, ApproachCardContent, ApproachCard } from "@/lib/imports";
 
 const Approach = () => {
   return (
@@ -14,9 +14,9 @@ const Approach = () => {
             Our Approach
           </h1>
           <h2 className="text-blue-600 pb-16 text-sm md:text-base text-center max-w-3xl">
-            We turn your vision into reality with strategic planning,
-            cutting-edge tech, and user-focused design—prioritizing quality,
-            communication, and exceeding expectations
+            We turn your vision into reality through Agile methodology—embracing
+            adaptive planning, continuous development, and iterative
+            improvements to deliver high-quality solutions efficiently.
           </h2>
           <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
             {ApproachCardContent.map((content, index) => (

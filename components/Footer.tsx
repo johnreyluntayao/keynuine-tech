@@ -15,8 +15,7 @@ const Footer = () => {
               <h1 className="font-bold text-lg md:text-xl lg:text-2xl">KeyNuine Tech</h1>
             </div>
             <p className="text-blue-400 text-sm md:text-base text-center sm:text-left max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              volutpat posuere dolor a finibus.
+            KeyNuine Tech is a creative agency dedicated to making your ideas truly extraordinary. Crafting compelling brand experiences of your own.
             </p>
           </div>
 

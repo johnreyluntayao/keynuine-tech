@@ -44,24 +44,24 @@ export const ServiceCardContent = [
 export const ApproachCardContent = [
     {
         id: 1,
-        icon: "developer.svg",
+        icon: "refinement.svg",
         count:"01",
-        title: "Collaborative Vision",
-        description: "At KeyNuine Tech, we believe in the power of collaboration. By working closely with our clients, we ensure every project aligns with their unique vision and goals, resulting in solutions that truly resonate."
+        title: "Planning & Refinement",
+        description: "Prioritize features and gather requirements. Define the scope of the upcoming sprint. Break down tasks, estimate efforts, and align the team's objectives."
     },
     {
         id: 2,
-        icon: "developer.svg",
+        icon: "development.svg",
         count:"02",
-        title: "Innovative Solutions",
-        description: "We leverage the latest technologies and creative problem-solving to craft web, mobile, and game development solutions that are not only functional but also forward-thinking and impactful."
+        title: "Development & Integration",
+        description: "Sprint execution for development and integration of features, including design. Regularly check progress, address obstacles, and test code to ensure quality."
     },
     {
         id: 3,
-        icon: "developer.svg",
+        icon: "review.svg",
         count:"03",
-        title: "User-Focused Design",
-        description: "Every project at KeyNuine Tech is built with the end user in mind. From seamless interfaces to engaging experiences, we prioritize designs that enhance usability and deliver value."
+        title: "Review & Improvement",
+        description: "Demonstrate completed work and gather feedback for improvements. Reflect on the sprint, identify areas for enhancement, and implement refinements."
     }
     
 ]
@@ -70,42 +70,68 @@ export const techStack = [
     {
         id: 1,
         label: "Next JS",
-        img: "/techstack/nextjs.svg"
-    },{
+        img: "/techstack/nextjs.svg",
+        description: "React framework for server-side rendering and static sites.",
+        link: "https://nextjs.org/"
+    },
+    {
         id: 2,
-        label: "Typescript",
-        img: "/techstack/typescript.svg"
-    },{
+        label: "TypeScript",
+        img: "/techstack/typescript.svg",
+        description: "Superset of JavaScript that adds static types.",
+        link: "https://www.typescriptlang.org/"
+    },
+    {
         id: 3,
         label: "React JS/Native",
-        img: "/techstack/react.svg"
-    },{
+        img: "/techstack/react.svg",
+        description: "JavaScript library for building user interfaces.",
+        link: "https://react.dev/"
+    },
+    {
         id: 4,
         label: "Tailwind CSS",
-        img: "/techstack/tailwindcss.svg"
-    },{
+        img: "/techstack/tailwindcss.svg",
+        description: "Utility-first CSS framework for rapid UI development.",
+        link: "https://tailwindcss.com/"
+    },
+    {
         id: 5,
         label: "HTML",
-        img: "/techstack/html.svg"
-    },{
+        img: "/techstack/html.svg",
+        description: "Markup language for creating web pages.",
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
         id: 6,
         label: "CSS",
-        img: "/techstack/css.svg"
-    },{
+        img: "/techstack/css.svg",
+        description: "Stylesheet language for designing web pages.",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
         id: 7,
         label: "JavaScript",
-        img: "/techstack/javascript.svg"
-    },{
+        img: "/techstack/javascript.svg",
+        description: "Programming language for web development.",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
         id: 8,
         label: "C++",
-        img: "/techstack/cplusplus.svg"
-    },{
+        img: "/techstack/cplusplus.svg",
+        description: "Programming language for system and game development.",
+        link: "https://isocpp.org/"
+    },
+    {
         id: 9,
         label: "Unity",
-        img: "/techstack/unity.svg"
-    },
-    
-]
+        img: "/techstack/unity.svg",
+        description: "Game engine for 2D, 3D, and interactive experiences.",
+        link: "https://unity.com/"
+    }
+];
+
 
   // Data for quick links
   export const quickLinks = [
@@ -165,7 +191,7 @@ export const AboutContent = [
         index: 2,
         title: "Aljonard Dela Cruz",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/ambo.jpg",
+        image: "/Aljonard.png",
     },
 
     {
@@ -198,9 +224,9 @@ export const AboutUsContent = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
     },{
         id: 4,
-        img: "/ambo.jpg",
+        img: "/about/Aljonard.png",
         name: "Aljonard Dela Cruz",
-        designation: "Front-end Developer",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+        designation: "Front-End Developer",
+        description: "I'm a front-end developer with a passion for creating user-friendly websites and web applications.",
     }
 ]
