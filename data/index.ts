@@ -188,7 +188,7 @@ export const AboutUsContent = [
         id: 2,
         img: "/about/Johnrey.PNG",
         name: "Johnrey Luntayao",
-        designation: "UI/UX Designer | Front-end Developer",
+        designation: "UI/UX Designer | Front-end Developer | Back-end Developer",
         description: "I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs. And is experienced in framework based front-end development.",
     },{
         id: 3,
