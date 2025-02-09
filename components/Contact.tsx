@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-8 md:py-16 bg-darkblue-1000 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="contact" className="py-8 md:py-16 bg-darkblue-1000 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
       <motion.div
         className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin"
         variants={containerVariants}

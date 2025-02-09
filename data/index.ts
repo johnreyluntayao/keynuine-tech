@@ -1,4 +1,3 @@
-
 //Navigation Links
 export const navItems = [
     {
@@ -14,7 +13,7 @@ export const navItems = [
     {
         id: 3,
         label: 'What we offer',
-        link: "#offer",
+        link: "#service",
     }
 ];
 
@@ -158,7 +157,7 @@ export const techStack = [
   export const quickLinks = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#offer", label: "What we offer" },
+    { href: "#service", label: "What we offer" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -174,20 +173,20 @@ export const techStack = [
     { href: "#facebook", label: "Facebook" },
     { href: "#twitter", label: "Twitter" },
     { href: "#linkedin", label: "LinkedIn" },
-  ];
+];
 
 
   export const ProjectItems = [
-  {
+    {
     index: 0,
     title: "TravelCN",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
+    description: "TravelCN is a website that showcases the stunning landmarks and must-visit tourist spots in Camarines Norte, Philippines. It offers an informative and visually captivating guide to the province's natural wonders and cultural attractions.",
     image: "/Travel CN.svg",
     visitLink: "https://travelcn.vercel.app/",
     codeLink: "https://github.com/aljonard-dc/travelcn",
-  }
+    }
 
-  
+
 
 ];
 
@@ -202,7 +201,7 @@ export const AboutUsContent = [
         id: 2,
         img: "/about/Johnrey.PNG",
         name: "Johnrey Luntayao",
-        designation: "UI/UX Designer | Front-end Developer | Back-end Developer",
+        designation: "UI/UX Designer | Full-Stack Developer",
         description: "I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs. And is experienced in framework based front-end development.",
     },{
         id: 3,
@@ -210,11 +209,11 @@ export const AboutUsContent = [
         name: "John Cloyd Refani",
         designation: "Game Developer",
         description: "I am a game and web developer passionate about creating interactive and user-friendly digital experiences. With a strong foundation in both website and game development, I design and build websites and games that are not only visually appealing but also functional.",
-   },{
+    },{
         id: 4,
         img: "/about/Aljonard.png",
         name: "Aljonard Dela Cruz",
         designation: "Front-End Developer",
-        description: "I'm a front-end developer with a passion for creating user-friendly websites and web applications.",
+        description: "I'm a front-end developer passionate about turning designs into responsive, user-friendly, and visually appealing websites and web applications using modern technologies.",
     }
 ]
