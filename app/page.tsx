@@ -6,7 +6,6 @@ import {
   Service,
   Approach,
   Projects,
-  About,
   AboutUs,
   AboutUsContent,
   Footer,

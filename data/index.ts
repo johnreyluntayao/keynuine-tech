@@ -170,39 +170,6 @@ export const techStack = [
 
 ];
 
-export const AboutContent = [
-    {
-      index: 0,
-      title: "About Us",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-      image: "/Travel CN.svg",
-
-    },
-
-    {
-        index: 1,
-        title: "Johnrey Luntayao",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/Johnrey,jpg",
-  
-    },
-
-    {
-        index: 2,
-        title: "Aljonard Dela Cruz",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/Aljonard.png",
-    },
-
-    {
-        index: 3,
-        title: "John Cloyd Refani",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-        image: "/Travel CN.svg",
-  
-    },
-];
-
 export const AboutUsContent = [
     {
         id: 1,
