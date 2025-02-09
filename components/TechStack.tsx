@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { techStack } from "@/lib/imports";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,10 +36,28 @@ const TechStack: React.FC = () => {
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
+  const childVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <section className="bg-blue-400 w-full max-w-7xl h-auto py-8 flex items-center justify-center">
-      <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 py-4 md:py-8 xl:py-16 px-8 md:px-16 lg:px-24">
+    <motion.section 
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.7 }}
+    className="bg-blue-400 w-full max-w-8xl h-auto py-8 flex items-center justify-center">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-14 py-4 md:py-8 xl:py-16 px-8 md:px-16 lg:px-24">
         {techStack.map((tech: Tech, idx: number) => (
           <div
             key={tech.id}
@@ -65,6 +84,8 @@ const TechStack: React.FC = () => {
               </Link>
               <h2 className="text-xs text-white">{tech.description}</h2>
             </div>
+            <motion.div 
+            variants={childVariants}>
             <Image
               src={tech.img}
               alt={tech.label}
@@ -72,10 +93,12 @@ const TechStack: React.FC = () => {
               height={48}
               className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition-transform duration-200 group-hover:scale-110"
             />
+            </motion.div>
+          
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -118,13 +118,34 @@ export const techStack = [
     },
     {
         id: 8,
+        label: "PHP",
+        img: "/techstack/php.svg",
+        description: "Server-side scripting language for web development.",
+        link: "https://www.php.net/"
+    },
+    {
+        id: 9,
+        label: "MySQL",
+        img: "/techstack/mysql.svg",
+        description: "Relational database management system.",
+        link: "https://www.mysql.com/"
+    },
+    {
+        id: 10,
+        label: "Node.js",
+        img: "/techstack/nodejs.svg",
+        description: "JavaScript runtime built on Chrome's V8 engine.",
+        link: "https://nodejs.org/"
+    },
+    {
+        id: 11,
         label: "C++",
         img: "/techstack/cplusplus.svg",
         description: "Programming language for system and game development.",
         link: "https://isocpp.org/"
     },
     {
-        id: 9,
+        id: 12,
         label: "Unity",
         img: "/techstack/unity.svg",
         description: "Game engine for 2D, 3D, and interactive experiences.",

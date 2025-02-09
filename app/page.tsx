@@ -10,11 +10,11 @@ import {
   AboutUsContent,
   Footer,
   BottomFooter
- } from '@/lib/imports';
+} from '@/lib/imports';
 
 export default function Home() {
   return (
-   <main>
+  <main>
     <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin'>
       <Header/>
       <Hero />
@@ -29,7 +29,6 @@ export default function Home() {
       <Footer />
       <BottomFooter/>
     </div>
-    
-   </main>
+  </main>
   );
 }
