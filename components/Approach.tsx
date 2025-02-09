@@ -20,7 +20,7 @@ const Approach = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section className="relative py-8 md:py-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="approach" className="relative py-8 md:py-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
       <div className="absolute -top-36 mx-mobile-margin md:mx-tablet-margin lg:mx-laptop-margin">
         <TechStack />
       </div>

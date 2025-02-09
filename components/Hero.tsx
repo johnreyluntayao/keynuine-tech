@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex items-center justify-center bg-gradient-to-t from-blue-100 to-white h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="home" className="flex items-center justify-center bg-gradient-to-t from-blue-100 to-white h-screen -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[90rem] py-8 md:py-16 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin"
         variants={containerVariants}

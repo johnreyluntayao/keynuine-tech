@@ -21,7 +21,7 @@ const Service = () => {
   };
 
   return (
-    <section className="py-8 md:py-16 bg-darkblue-1000 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="service" className="py-8 md:py-16 bg-darkblue-1000 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
       <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin">
         <motion.div
           className="flex flex-col items-center"

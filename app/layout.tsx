@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "KeyNuine Tech",
-  description: "",
+  description: "KeyNuine Tech specializes in innovative web and game development solutions, delivering high-quality digital experiences.",
+  icons: {
+    icon: "/KeyNuine.svg",
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="icon" href="/KeyNuine.svg" type="image/svg+xml" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
