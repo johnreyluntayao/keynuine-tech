@@ -189,7 +189,7 @@ export const AboutUsContent = [
         name: "John Cloyd Refani",
         designation: "Game Developer",
         description: "I am a game and web developer passionate about creating interactive and user-friendly digital experiences. With a strong foundation in both website and game development, I design and build websites and games that are not only visually appealing but also functional.",
-    },{
+   },{
         id: 4,
         img: "/about/Aljonard.png",
         name: "Aljonard Dela Cruz",
