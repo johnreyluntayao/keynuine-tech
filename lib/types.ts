@@ -42,3 +42,12 @@ export type AboutProps = {
   designation: string;
   description: string;
 };
+
+//TechStack Props
+export interface Tech {
+  id: number;
+  label: string;
+  img: string;
+  description: string;
+  link: string;
+}

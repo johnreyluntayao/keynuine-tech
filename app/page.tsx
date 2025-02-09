@@ -1,5 +1,4 @@
-
-import { 
+import {
   Header,
   Hero,
   Contact,
@@ -9,26 +8,25 @@ import {
   AboutUs,
   AboutUsContent,
   Footer,
-  BottomFooter
-} from '@/lib/imports';
+  BottomFooter,
+  TechStack,
+} from "@/lib/imports";
 
 export default function Home() {
   return (
-  <main>
-    <div className='px-mobile-margin md:px-tablet-margin lg:px-laptop-margin'>
-      <Header/>
-      <Hero />
-      <Service/>
-      <AboutUs 
-      about={AboutUsContent}
-      autoplay
-      />
-      <Approach/> 
-      <Projects/>
-      <Contact/>
-      <Footer />
-      <BottomFooter/>
-    </div>
-  </main>
+    <main>
+      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin overflow-hidden">
+        <Header />
+        <Hero />
+        <Service />
+        <AboutUs about={AboutUsContent} autoplay />
+        <TechStack/>
+        <Approach />
+        <Projects />
+        <Contact />
+        <Footer />
+        <BottomFooter />
+      </div>
+    </main>
   );
 }

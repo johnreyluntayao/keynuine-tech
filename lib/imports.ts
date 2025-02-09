@@ -16,6 +16,7 @@ export { default as BottomFooter } from '@/components/ui/BottomFooter';
 export { default as ServiceCard } from "@/components/ui/ServiceCard";
 export { NavButtonPrev, NavButtonNext } from '@/components/ui/Navigation';
 export { Carousel } from '@/components/ui/Carousel';
+export { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
 
 //Data
 export {
@@ -38,4 +39,5 @@ export type {
     NavButtonProps,
     IndexNumber,
     AboutProps,
+    Tech,
 } from '@/lib/types';
