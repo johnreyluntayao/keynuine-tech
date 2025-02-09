@@ -118,13 +118,34 @@ export const techStack = [
     },
     {
         id: 8,
+        label: "PHP",
+        img: "/techstack/php.svg",
+        description: "Server-side scripting language for web development.",
+        link: "https://www.php.net/"
+    },
+    {
+        id: 9,
+        label: "MySQL",
+        img: "/techstack/mysql.svg",
+        description: "Relational database management system.",
+        link: "https://www.mysql.com/"
+    },
+    {
+        id: 10,
+        label: "Node.js",
+        img: "/techstack/nodejs.svg",
+        description: "JavaScript runtime built on Chrome's V8 engine.",
+        link: "https://nodejs.org/"
+    },
+    {
+        id: 11,
         label: "C++",
         img: "/techstack/cplusplus.svg",
         description: "Programming language for system and game development.",
         link: "https://isocpp.org/"
     },
     {
-        id: 9,
+        id: 12,
         label: "Unity",
         img: "/techstack/unity.svg",
         description: "Game engine for 2D, 3D, and interactive experiences.",
@@ -162,8 +183,8 @@ export const techStack = [
     title: "TravelCN",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
     image: "/Travel CN.svg",
-    visitLink: "#",
-    codeLink: "#",
+    visitLink: "https://travelcn.vercel.app/",
+    codeLink: "https://github.com/aljonard-dc/travelcn",
   }
 
   
@@ -185,11 +206,11 @@ export const AboutUsContent = [
         description: "I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs. And is experienced in framework based front-end development.",
     },{
         id: 3,
-        img: "/Patot.jpg",
-        name: "John Cloyd",
+        img: "/about/John Cloyd.PNG",
+        name: "John Cloyd Refani",
         designation: "Game Developer",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat posuere dolor a finibus.",
-    },{
+        description: "I am a game and web developer passionate about creating interactive and user-friendly digital experiences. With a strong foundation in both website and game development, I design and build websites and games that are not only visually appealing but also functional.",
+   },{
         id: 4,
         img: "/about/Aljonard.png",
         name: "Aljonard Dela Cruz",

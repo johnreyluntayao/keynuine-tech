@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TechStack, ApproachCardContent, ApproachCard } from "@/lib/imports";
+import { ApproachCardContent, ApproachCard } from "@/lib/imports";
+
 
 const Approach = () => {
   const containerVariants = {
@@ -26,18 +27,10 @@ const Approach = () => {
   };
 
   return (
-    <section className="relative py-8 md:py-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
-      <motion.div
-        className="absolute -top-36 mx-mobile-margin md:mx-tablet-margin lg:mx-laptop-margin"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: 0.2 }}
-      >
-        <TechStack />
-      </motion.div>
+    <section className="pb-8 md:pb-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-0">
 
       <motion.div
-        className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin pt-24 md:pt-32"
+        className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin pt-52 md:pt-60 lg:pt-58 xl:pt-48  "
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

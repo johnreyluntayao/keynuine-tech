@@ -1,28 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { techStack } from "@/lib/imports";
+import { motion } from "framer-motion";
+import { techStack, Tech } from "@/lib/imports";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-// Define the type for a single tech stack item
-interface Tech {
-  id: number;
-  label: string;
-  img: string;
-  description: string;
-  link: string;
-}
-
 const TechStack: React.FC = () => {
   const [activeTooltip, setActiveTooltip] = useState<number | null>(null);
 
-  // Function to toggle tooltip on click
   const handleToggleTooltip = (idx: number): void => {
     setActiveTooltip(activeTooltip === idx ? null : idx);
   };
 
-  // Close tooltip when clicking outside
   useEffect(() => {
     if (typeof document === "undefined") return;
 
@@ -35,20 +25,37 @@ const TechStack: React.FC = () => {
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
 
+  const childVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <section className="bg-blue-400 w-full max-w-7xl h-auto py-8 flex items-center justify-center">
-      <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 py-4 md:py-8 xl:py-16 px-8 md:px-16 lg:px-24">
+    <motion.section 
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.7 }}
+    className="bg-blue-400 w-full max-w-[1450px] h-auto py-8 flex items-center justify-center relative -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-[1000]">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-8 xl:gap-12 py-4 md:py-8 lg:py-16 px-8 md:px-16">
         {techStack.map((tech: Tech, idx: number) => (
           <div
             key={tech.id}
             className="relative flex-shrink-0 group cursor-pointer tooltip-container"
             onClick={(e: React.MouseEvent) => {
-              e.stopPropagation(); // Prevent immediate closing when clicking inside the tooltip
+              e.stopPropagation();
               handleToggleTooltip(idx);
             }}
           >
-            {/* Tooltip on hover & click */}
             <div
               className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 ${
                 activeTooltip === idx ? "flex" : "hidden group-hover:flex"
@@ -65,17 +72,21 @@ const TechStack: React.FC = () => {
               </Link>
               <h2 className="text-xs text-white">{tech.description}</h2>
             </div>
+            <motion.div 
+            variants={childVariants}>
             <Image
               src={tech.img}
               alt={tech.label}
               width={48}
               height={48}
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition-transform duration-200 group-hover:scale-110"
+              className="w-12 h-12 md:w-14 md:h-14  transition-transform duration-200 group-hover:scale-110"
             />
+            </motion.div>
+          
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

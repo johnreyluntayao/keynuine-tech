@@ -39,4 +39,5 @@ export type {
     NavButtonProps,
     IndexNumber,
     AboutProps,
+    Tech,
 } from '@/lib/types';
