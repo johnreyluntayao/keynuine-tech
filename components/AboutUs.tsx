@@ -52,7 +52,7 @@ export const AboutUs = ({
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section id="about" className="place-items-center antialiased pt-8 md:pt-16 pb-8 md:pb-24 lg:pb-32 xl:pb-24 bg-gradient-to-b from-white to-darkblue-100 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="about" className="w-full place-items-center antialiased pt-8 md:pt-16 pb-8 md:pb-24 lg:pb-32 xl:pb-24 bg-gradient-to-b from-white to-darkblue-100">
       <motion.div
         variants={containerVariants}
         initial="hidden"

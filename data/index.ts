@@ -7,13 +7,23 @@ export const navItems = [
     },
     {
         id: 2,
+        label: 'Services',
+        link: "#service",
+    },
+    {
+        id: 3,
         label: 'About',
         link: "#about",
     },
     {
-        id: 3,
-        label: 'What we offer',
-        link: "#service",
+        id: 4,
+        label: 'Our Approach',
+        link: '#approach',
+    },
+    {
+        id: 5,
+        label: 'Projects',
+        link: '#projects',
     }
 ];
 
@@ -180,13 +190,11 @@ export const techStack = [
     {
     index: 0,
     title: "TravelCN",
-    description: "TravelCN is a website that showcases the stunning landmarks and must-visit tourist spots in Camarines Norte, Philippines. It offers an informative and visually captivating guide to the province's natural wonders and cultural attractions.",
+    description: "TravelCN is a website that showcases the stunning landmarks and must-visit tourist spots in Camarines Norte, Philippines.",
     image: "/Travel CN.svg",
     visitLink: "https://travelcn.vercel.app/",
     codeLink: "https://github.com/aljonard-dc/travelcn",
     }
-
-
 
 ];
 

@@ -45,6 +45,10 @@ export default {
         "tablet-margin": "60px",
         "laptop-margin": "120px",
       },
+
+      maxWidth: {
+        'max': '1536px',
+      },
     },
 
   },

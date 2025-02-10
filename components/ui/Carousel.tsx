@@ -2,24 +2,33 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Button, NavButtonNext, NavButtonPrev, ProjectItems } from "@/lib/imports";
+import {
+  Button,
+  NavButtonNext,
+  NavButtonPrev,
+  ProjectItems,
+} from "@/lib/imports";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? ProjectItems.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? ProjectItems.length - 1 : prevIndex - 1
+    );
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === ProjectItems.length - 1 ? 0 : prevIndex + 1));
-  }; 
+    setCurrentIndex((prevIndex) =>
+      prevIndex === ProjectItems.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   const currentItem = ProjectItems[currentIndex];
 
   return (
     <div className="relative w-auto flex items-center justify-center">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="hidden md:block">
           <NavButtonPrev onClick={prevSlide} />
         </div>
@@ -67,4 +76,4 @@ export const Carousel = () => {
       </div>
     </div>
   );
-}; 
+};
