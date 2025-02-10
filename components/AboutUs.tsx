@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { NavButtonPrev, NavButtonNext, AboutProps } from "@/lib/imports";
 
 export const AboutUs = ({
@@ -15,13 +15,13 @@ export const AboutUs = ({
   const [active, setActive] = useState(0);
   const [rotateY, setRotateY] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % about.length);
-  };
+  }, [about.length]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setActive((prev) => (prev - 1 + about.length) % about.length);
-  };
+  }, [about.length]);
 
   const isActive = (index: number) => {
     return index === active;
@@ -36,7 +36,8 @@ export const AboutUs = ({
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, handleNext]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -51,6 +52,7 @@ export const AboutUs = ({
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
   return (
     <section id="about" className="w-full place-items-center antialiased pt-8 md:pt-16 pb-8 md:pb-24 lg:pb-32 xl:pb-24 bg-gradient-to-b from-white to-darkblue-100">
       <motion.div
@@ -60,8 +62,8 @@ export const AboutUs = ({
         viewport={{ amount: 0.2 }}
       >
         <motion.h1 
-        variants={childVariants}
-        className="pb-16 text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
+          variants={childVariants}
+          className="pb-16 text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
           About Us
         </motion.h1>
       </motion.div>
