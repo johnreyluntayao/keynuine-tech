@@ -213,13 +213,13 @@ export const AboutUsContent = [
         description: "I'm a developer & designer based from the Philippines. I specialize in UI/UX designing, focusing on creating simple but high quality designs. And is experienced in framework based front-end development.",
     },{
         id: 3,
-        img: "/about/John Cloyd.PNG",
+        img: "/about/John-Cloyd.PNG",
         name: "John Cloyd Refani",
         designation: "Game Developer",
         description: "I am a game and web developer passionate about creating interactive and user-friendly digital experiences. With a strong foundation in both website and game development, I design and build websites and games that are not only visually appealing but also functional.",
     },{
         id: 4,
-        img: "/about/Aljonard.png",
+        img: "/about/Aljonard.PNG",
         name: "Aljonard Dela Cruz",
         designation: "Front-End Developer",
         description: "I'm a front-end developer passionate about turning designs into responsive, user-friendly, and visually appealing websites and web applications using modern technologies.",
