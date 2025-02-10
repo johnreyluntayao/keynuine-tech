@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center sm:items-start space-y-4">
             <div className="flex items-center space-x-4 ">
-              <Image src="/Keynuine.svg" alt="KeyNuine Tech" width={100} height={100} />
+              <Image src="/KeyNuine.svg" alt="KeyNuine Tech" width={100} height={100} />
               <h1 className="font-bold text-lg md:text-xl lg:text-2xl">KeyNuine Tech</h1>
             </div>
             <p className="text-blue-400 text-sm md:text-base text-center sm:text-left max-w-md">
