@@ -38,6 +38,7 @@ export const Carousel = () => {
             <Image
               width={300}
               height={300}
+              aria-label="Project Pic"
               src={currentItem.image}
               alt={currentItem.title}
               className="bg-darkblue-600 w-full h-full object-cover"
@@ -70,8 +71,8 @@ export const Carousel = () => {
         </div>
 
         <div className="flex md:hidden gap-4 mt-4">
-          <NavButtonPrev onClick={prevSlide} />
-          <NavButtonNext onClick={nextSlide} />
+          <NavButtonPrev aria-label="Previous Slide" onClick={prevSlide} />
+          <NavButtonNext aria-label="Next Slide" onClick={nextSlide} />
         </div>
       </div>
     </div>
