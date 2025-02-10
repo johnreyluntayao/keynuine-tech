@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ApproachCardContent, ApproachCard } from "@/lib/imports";
 
 
-
 const Approach = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -28,7 +27,7 @@ const Approach = () => {
   };
 
   return (
-    <section className="pb-8 md:pb-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-0">
+    <section id="approach" className="w-full pb-8 md:pb-16 bg-gradient-to-b from-white to-darkblue-100 flex items-center justify-center -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-0">
 
       <motion.div
         className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin pt-52 md:pt-60 lg:pt-58 xl:pt-48  "

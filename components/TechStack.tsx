@@ -45,7 +45,7 @@ const TechStack: React.FC = () => {
     initial="hidden"
     whileInView="visible"
     viewport={{ amount: 0.7 }}
-    className="bg-blue-400 w-full max-w-[1450px] h-auto py-8 flex items-center justify-center relative -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-[1000]">
+    className="bg-blue-400 w-full max-w-[1450px] h-auto py-8 flex items-center justify-center relative -mt-44 md:-mt-48 lg:-mt-48 xl:-mt-32 z-[500]">
       <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-8 xl:gap-12 py-4 md:py-8 lg:py-16 px-8 md:px-16">
         {techStack.map((tech: Tech, idx: number) => (
           <div

@@ -6,8 +6,8 @@ import { quickLinks, contactInfo, socialMedia } from '@/lib/imports';
 const Footer = () => {
 
   return (
-    <footer className="bg-darkblue-800 text-blue-50 py-8 md:py-16 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin border-y-2 border-blue-600">
-      <div className=" px-mobile-margin md:px-tablet-margin lg:px-laptop-margin">
+    <footer className="bg-darkblue-800 text-blue-50 py-8 md:py-16 border-y-2 border-blue-600 w-full place-items-center">
+      <div className=" px-mobile-margin md:px-tablet-margin lg:px-laptop-margin max-w-max">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center sm:items-start space-y-4">
             <div className="flex items-center space-x-4 ">

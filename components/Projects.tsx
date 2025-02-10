@@ -19,7 +19,7 @@ const Projects = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section id="projects" className="py-8 md:py-16 -mx-mobile-margin md:-mx-tablet-margin lg:-mx-laptop-margin">
+    <section id="projects" className="w-full py-8 md:py-16">
             <motion.div 
             variants={containerVariants}
             initial="hidden"

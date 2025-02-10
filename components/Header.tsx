@@ -73,18 +73,21 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`px-mobile-margin md:px-tablet-margin lg:px-laptop-margin h-16 md:h-20 lg:h-24 md:20 flex justify-between fixed top-0 left-0 right-0 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      } ${
-        isScrolled ? "bg-white border-b-2 border-darkblue-800/20" : "bg-transparent"
-      } z-[1000]`}
-    >
+  className={`w-full mx-auto px-mobile-margin md:px-tablet-margin lg:px-laptop-margin h-16 md:h-20 lg:h-24 flex justify-between items-center fixed top-0 left-0 right-0 transition-transform duration-300 ${
+    isVisible ? "translate-y-0" : "-translate-y-full"
+  } ${
+    isScrolled ? "bg-white border-b-2 border-darkblue-800/20" : "bg-transparent"
+  } z-[1000]`}
+>
+
       <div className="flex py-2 items-center">
-        <div className="flex md:hidden pr-4 w-10" onClick={toggleMobileMenu}>
-          <img
+        <div className="flex lg:hidden pr-4 w-10 md:w-12" onClick={toggleMobileMenu}>
+          <Image
             src="/burger.svg"
             alt="Menu"
-            className="w-10 h-10 cursor-pointer text-darkblue-700"
+            width={40}
+            height={40}
+            className="w-10 h-10 md:w-12 md:h-12 cursor-pointer text-darkblue-700"
             onClick={toggleMobileMenu}
           />
         </div>
@@ -107,7 +110,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="flex items-center justify-end gap-8">
-        <div className="hidden md:flex gap-8">
+        <div className="hidden lg:flex gap-8">
           {navItems.map((item, idx) => (
             <div
               key={idx}
@@ -128,6 +131,8 @@ const Header: React.FC = () => {
         </Link>
       </div>
 
+      
+
       {isMobileMenuOpen && (
         <div
           className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 backdrop-blur-sm z-[1000]" // Added z-[1000] here
@@ -135,10 +140,12 @@ const Header: React.FC = () => {
         >
           <div className="bg-white w-3/4 h-screen p-6">
             <div className="flex justify-end">
-              <img
+              <Image
                 src="/close-icon.svg"
                 alt="Close Menu"
-                className="w-6 h-6 cursor-pointer text-darkblue-700"
+                width={24}
+                height={24}
+                className="w-6 h-6 md:w-8 md:h-8 cursor-pointer text-darkblue-700"
                 onClick={toggleMobileMenu}
               />
             </div>

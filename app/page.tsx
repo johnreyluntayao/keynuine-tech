@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main>
-      <div className="px-mobile-margin md:px-tablet-margin lg:px-laptop-margin overflow-hidden">
+      <div className="overflow-hidden place-items-center">
         <Header />
         <Hero />
         <Service />
