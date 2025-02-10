@@ -191,9 +191,25 @@ export const techStack = [
     index: 0,
     title: "TravelCN",
     description: "TravelCN is a website that showcases the stunning landmarks and must-visit tourist spots in Camarines Norte, Philippines.",
-    image: "/Travel CN.svg",
+    image: "/projects/travelcn.svg",
     visitLink: "https://travelcn.vercel.app/",
     codeLink: "https://github.com/aljonard-dc/travelcn",
+    },
+    {
+    index: 1,
+    title: "Elementalix",
+    description: "Elementalix is an AR learning app that makes studying the Periodic Table immersive with a 360° view and detailed element data.",
+    image: "/projects/elementalix.jpg",
+    visitLink: "https://github.com/johnrefani/Elementalix",
+    codeLink: "https://github.com/johnrefani/Elementalix",
+    },
+    {
+    index: 2,
+    title: "Natura Verde",
+    description: "Natura Verde website streamlines resort bookings with a user-friendly interface, detailed resort info, a virtual tour, and an automated reservation system for efficiency and accuracy.",
+    image: "/projects/natura.png",
+    visitLink: "https://travelcn.vercel.app/",
+    codeLink: "https://github.com/johnrefani/Elementalix",
     }
 
 ];
