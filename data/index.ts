@@ -208,7 +208,7 @@ export const techStack = [
     title: "Natura Verde",
     description: "Natura Verde website streamlines resort bookings with a user-friendly interface, detailed resort info, a virtual tour, and an automated reservation system for efficiency and accuracy.",
     image: "/projects/natura.png",
-    visitLink: "https://travelcn.vercel.app/",
+    visitLink: "https://naturaverde.website/",
     codeLink: "https://github.com/johnrefani/Elementalix",
     }
 
