@@ -107,6 +107,7 @@ export const AboutUs = ({
                     width={500}
                     height={500}
                     draggable={false}
+                    aria-label="profile"
                     className="h-[300px] lg:h-[350px] w-[300px] lg:w-[350px] object-cover object-center"
                   />
                 </motion.div>
@@ -167,8 +168,8 @@ export const AboutUs = ({
             </motion.p>
           </motion.div>
           <div className="flex gap-4 pt-6 md:pt-0">
-            <NavButtonPrev onClick={handlePrev} />
-            <NavButtonNext onClick={handleNext} />
+            <NavButtonPrev aria-label="Previous Slide" onClick={handlePrev} />
+            <NavButtonNext aria-label="Next Slide" onClick={handleNext} />
           </div>
         </div>
       </div>
