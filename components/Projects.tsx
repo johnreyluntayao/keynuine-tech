@@ -19,13 +19,13 @@ const Projects = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section id="projects" className="w-full py-8 md:py-16">
+    <section id="projects" className="w-full py-8 md:py-16 ">
             <motion.div 
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.2 }}
-            className="flex flex-col items-center">
+            className="flex flex-col items-center px-mobile-margin md:px-tablet-margin lg:px-laptop-margin max-w-max">
                 <motion.h1 
                 variants={childVariants}
                 className="pb-16 text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">Projects</motion.h1>
