@@ -28,12 +28,12 @@ export const Carousel = () => {
 
   return (
     <div className="relative w-auto flex items-center justify-center">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 ">
         <div className="hidden md:block">
           <NavButtonPrev onClick={prevSlide} />
         </div>
 
-        <div className="grid grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-[450px] h-[300px] md:w-[500px] md:h-[350px] lg:w-[550px] lg:h-[400px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-auto h-auto md:w-[500px] md:h-[350px] lg:w-[550px] lg:h-[400px]">
           <div>
             <Image
               width={300}
@@ -41,17 +41,17 @@ export const Carousel = () => {
               aria-label="Project Pic"
               src={currentItem.image}
               alt={currentItem.title}
-              className="bg-darkblue-600 w-full h-full object-cover"
+              className="bg-darkblue-600 w-full h-[200px] md:h-full md:object-cover"
             />
           </div>
-          <div className="p-4 flex flex-col justify-center w-full">
+          <div className="p-4 flex flex-col justify-center max-w-[350px] md:max-w-full">
             <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-blue-950 pb-4">
               {currentItem.title}
             </h2>
             <p className="text-sm md:text-base text-blue-950 pb-6">
               {currentItem.description}
             </p>
-            <div className="mt-4 flex gap-2">
+            <div className="mt-0 md:mt-4 flex gap-2">
               <Button
                 label="Visit!"
                 link={currentItem.visitLink}
