@@ -57,7 +57,7 @@ const Contact = () => {
           >
             <Button
               className="text-darkblue-100 bg-blue-400 hover:bg-blue-500 transition-colors duration-300"
-              link="mailto:keynuinetech@gmail.com"
+              link="mailto:keynuinetechsolutions@gmail.com"
               label="Contact Us&#33;"
             />
           </motion.div>
