@@ -173,7 +173,7 @@ export const techStack = [
 
   // Data for contact info
   export const contactInfo = [
-    { type: "Email", value: "keynuinetech@gmail.com" },
+    { type: "Email", value: "keynuinetechsolutions@gmail.com" },
     { type: "Phone", value: "+639471852092" },
     { type: "Address", value: "Daet, Camarines Norte" },
   ];
