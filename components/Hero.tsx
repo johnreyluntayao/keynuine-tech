@@ -84,7 +84,7 @@ const Hero = () => {
             height={512}
             className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl"
             priority
-            aria-aria-label="Hero Image"
+            aria-label="Hero Image"
           />
         </motion.div>
       </motion.div>

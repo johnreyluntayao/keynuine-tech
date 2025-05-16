@@ -173,7 +173,7 @@ export const techStack = [
 
   // Data for contact info
   export const contactInfo = [
-    { type: "Email", value: "keynuinetech@gmail.com" },
+    { type: "Email", value: "keynuinetechsolutions@gmail.com" },
     { type: "Phone", value: "+639471852092" },
     { type: "Address", value: "Daet, Camarines Norte" },
   ];
@@ -209,7 +209,7 @@ export const techStack = [
     description: "Natura Verde website streamlines resort bookings with a user-friendly interface, detailed resort info, a virtual tour, and an automated reservation system for efficiency and accuracy.",
     image: "/projects/natura.png",
     visitLink: "https://naturaverde.website/",
-    codeLink: "https://github.com/johnrefani/Elementalix",
+    codeLink: "https://github.com/aljonard-dc/Resort-Web-based-Reservation-Management-System",
     }
 
 ];
