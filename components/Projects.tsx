@@ -19,7 +19,7 @@ const Projects = () => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <section id="projects" className="w-full py-8 md:py-16 ">
+    <section id="projects" className="w-full py-8 md:py-16 flex justify-center ">
             <motion.div 
             variants={containerVariants}
             initial="hidden"
