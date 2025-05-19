@@ -226,6 +226,15 @@ export const ProjectItems = [
     visitLink: "https://epandayalita.vercel.app/",
     codeLink: "https://github.com/aljonard-dc/epandayalita",
   },
+  {
+    index: 4,
+    title: "School Information System",
+    description:
+      "A role-based school system for managing academic records, enrollments, and generating reports for admins, instructors, and students.",
+    image: "/projects/schoolinfo.jpg",
+    visitLink: "https://github.com/johnrefani/SchoolInformationSytem",
+    codeLink: "https://github.com/johnrefani/SchoolInformationSytem",
+  },
 ];
 
 export const AboutUsContent = [
