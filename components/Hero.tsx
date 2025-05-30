@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/lib/imports";
 import Image from "next/image";
+import Wave from "./ui/Wave";
 
 const Hero = () => {
   const containerVariants = {
@@ -11,7 +12,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3, 
+        staggerChildren: 0.3,
       },
     },
   };
@@ -27,9 +28,12 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="flex w-full items-center justify-center bg-gradient-to-t from-blue-100 to-white h-screen xl:max-h-[50rem]">
+    <section
+      id="home"
+      className="relative flex w-full items-center justify-center bg-gradient-to-t from-blue-100 to-white h-screen xl:max-h-[50rem]"
+    >
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[90rem] py-8 md:py-16 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin"
+        className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[90rem] pt-8 md:pt-16 px-mobile-margin md:px-tablet-margin lg:px-laptop-margin"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -76,6 +80,15 @@ const Hero = () => {
         <motion.div
           className="flex justify-center items-center"
           variants={imageVariants}
+          animate={{
+            y: [0, -10, 0],
+          }}
+          transition={{
+            duration: 10, 
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut",
+          }}
         >
           <Image
             src="/hero-animate.gif"
@@ -88,6 +101,7 @@ const Hero = () => {
           />
         </motion.div>
       </motion.div>
+      <Wave />
     </section>
   );
 };
